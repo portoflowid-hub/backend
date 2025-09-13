@@ -2,9 +2,9 @@ import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import { connectedDB } from "./config/db.js"; // sesuaikan path
-import userRouter from "./routes/user.js";
-import adminRouter from "./routes/admin.js";
-import courseRouter from "./routes/course.js";
+import userRouter from "./router/userRoutes.js";
+import adminRouter from "./router/adminRoutes.js";
+import courseRouter from "./router/courseRoutes.js";
 
 const app = express();
 const PORT = process.env.PORT || 5000;
