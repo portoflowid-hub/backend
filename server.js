@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import { connectedDB } from "./db.js"; // sesuaikan path
+import { connectedDB } from ".config/db.js"; // sesuaikan path
 import userRouter from "./routes/user.js";
 import adminRouter from "./routes/admin.js";
 import courseRouter from "./routes/course.js";
