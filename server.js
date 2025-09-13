@@ -19,6 +19,13 @@ app.use(cors({
 app.use(express.json());
 app.use(cookieParser());
 
+app.get("/", (req, res) => {
+  res.send("Hello from Portoflow Backend 🚀");
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 // Router
 app.use(userRouter);
 app.use(adminRouter);
